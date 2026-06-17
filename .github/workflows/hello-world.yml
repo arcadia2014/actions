@@ -7,3 +7,13 @@ jobs:
       - run: echo "Hello World Action"
       - run: echo "Hello World from GitHub Actions!"
       - run: echo "THIS IS A SIMPLE WORKFLOW TO DEMONSTRATE GITHUB ACTIONS."
+      - name: Crea un archivo de texto
+        run: touch file1.txt
+      - name: Escribe en el archivo de texto
+        run: ls -al > file1.txt
+      - run: echo "Archivo file1.txt" >> file2.txt
+      - run: cat file1.txt
+      - run: ls -al
+
+
+
