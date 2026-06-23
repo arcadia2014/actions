@@ -35,4 +35,4 @@ jobs:
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
         
       - name: Ejecutar Script
-        run: python app.js
+        run: node app.js
