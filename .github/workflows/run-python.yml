@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:          
       - name: Inicio
-        run: echo "Comienza Actions"
+        run: echo "Comienza Acions"
         
       - name: Clonar Repositorio
         uses: actions/checkout@v2
@@ -36,3 +36,4 @@ jobs:
         
       - name: Ejecutar Script
         run: node app.js
+    
