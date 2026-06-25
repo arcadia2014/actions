@@ -1,0 +1,17 @@
+name: Hello World Actions
+on: [push]
+
+jobs:
+  hello-world-actions: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!!!!"
+      - run: echo "Ando probando actions XD"
+      - run: echo "Siiuuuu🚀"
+      - name: Crea unos archivos
+        run: touch file1.txt
+      - name: guarda el listado de archivos
+        run: ls -l > file2.txt
+      - run: echo "Agrego una linea a file2.txt" >> file2.txt 
+      - run: echo cat file2.txt 
+      - run: ls -la 
